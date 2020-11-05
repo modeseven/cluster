@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: Secret
-metadata:
-  name: postgres-secret
-  namespace: flux
-  labels:
-    app: postgres
-data:
-  POSTGRES_PASSWORD: eU5rb1M3YUxRQw==
