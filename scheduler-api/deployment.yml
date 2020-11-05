@@ -39,7 +39,7 @@ spec:
             name: postgres-secret
         - configMapRef:
             name: scheduler-config
-        image: docker.io/modeseven/scheduler-api
+        image: docker.io/modeseven/scheduler-api:dcebe3190482957d87a14d27d69cdc3b3fac2899
         imagePullPolicy: Always
         name: scheduler-api
         ports:
