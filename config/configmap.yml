@@ -9,4 +9,4 @@ data:
   POSTGRES_DB: scheduler
   POSTGRES_USER: postgres
   POSTGRES_HOST: 192.168.1.121
-  TEST_PROP: testing123
+  TEST_PROP: testing1238
