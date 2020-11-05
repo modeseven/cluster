@@ -2,11 +2,12 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   namespace: scheduler
-  name: scheduler-config-k
+  name: scheduler-config
   labels:
     app: scheduler
 data:
   POSTGRES_DB: scheduler
   POSTGRES_USER: postgres
-  POSTGRES_HOST: 192.168.1.121
-  TEST_PROP: updated755
+  POSTGRES_HOST: postgres-headless
+  TEST_PROP: testing1238
+
