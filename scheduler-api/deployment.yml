@@ -1,3 +1,4 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -39,7 +40,7 @@ spec:
             name: postgres-secret
         - configMapRef:
             name: scheduler-config
-        image: docker.io/modeseven/scheduler-api:dcebe3190482957d87a14d27d69cdc3b3fac2899
+        image: docker.io/modeseven/scheduler-api:edfade29302921450f69bd049c96de7a518b9d65
         imagePullPolicy: Always
         name: scheduler-api
         ports:
