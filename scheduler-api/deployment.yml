@@ -42,7 +42,14 @@ spec:
         image: docker.io/modeseven/scheduler-api:edfade29302921450f69bd049c96de7a518b9d65
         imagePullPolicy: Always
         name: scheduler-api
+        volumeMounts:                                               
+        - name: quarkus-config-volume                               
+          mountPath: /deployments/config 
         ports:
         - containerPort: 8080
           name: http
           protocol: TCP
+      volumes:                                                      
+      - name: quarkus-config-volume                               
+        configMap:                                                
+          name: scheduler-config
