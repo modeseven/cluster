@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: scheduler
+  annotations:
+    fluxcd.io/automated: "true"
+  name: scheduler-ui
+  labels:
+    app: scheduler-ui
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: scheduler-ui
+  template:
+    metadata:
+      labels:
+        app: scheduler-ui
+    spec:
+      containers:
+        - name: scheduler-ui
+          image: modeseven/scheduler-ui:88c893283e371dc17d04e1533f51cb133d53fe5f
+          ports:
+            - containerPort: 80
