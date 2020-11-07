@@ -7,7 +7,7 @@ commonAnnotations:
 bases:
 - ../base
 - ../components/nats
-#- ../components/noticegen
+- ../components/noticegen
 #- ../components/postgres
 #- ../components/scheduler-api
 #- ../components/scheduler-ui
