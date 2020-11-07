@@ -6,7 +6,7 @@ commonAnnotations:
     note: scheduler-nt develop
 bases:
 - ../base
-#- ../components/nats
+- ../components/nats
 #- ../components/noticegen
 #- ../components/postgres
 #- ../components/scheduler-api
