@@ -1,0 +1,10 @@
+commonLabels:
+    app: noticegen
+  
+resources:
+- deployment.yml
+- service.yml
+- configMap.yml
+  
+  
+  

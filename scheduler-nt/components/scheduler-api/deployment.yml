@@ -7,15 +7,15 @@ metadata:
     app.quarkus.io/commit-id: cfd678719658f4bd94e4cd59ef89db15e5eabd71
     fluxcd.io/automated: "true"
   labels:
-    app.kubernetes.io/name: noticegen
+    app.kubernetes.io/name: scheduler-api
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
-  name: noticegen
+  name: scheduler-api
   namespace: scheduler
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: noticegen
+      app.kubernetes.io/name: scheduler-api
       app.kubernetes.io/version: 1.0.0-SNAPSHOT
   template:
     metadata:
@@ -24,7 +24,7 @@ spec:
         app.quarkus.io/build-timestamp: 2020-11-04 - 12:12:41 +0000
         app.quarkus.io/commit-id: cfd678719658f4bd94e4cd59ef89db15e5eabd71
       labels:
-        app.kubernetes.io/name: noticegen
+        app.kubernetes.io/name: scheduler-api
         app.kubernetes.io/version: 1.0.0-SNAPSHOT
       namespace: scheduler
     spec:
@@ -35,11 +35,13 @@ spec:
             fieldRef:
               fieldPath: metadata.namespace
         envFrom:
+        - secretRef:
+            name: postgres-secret
         - configMapRef:
-            name: noticegen-config
-        image: docker.io/modeseven/noticegen:fc8aff43ebb3d5d508c1b69009120a50f628c931
+            name: scheduler-config
+        image: docker.io/modeseven/scheduler-api:938c1e3888f4a96835e67a1ab1e7e9782989f975
         imagePullPolicy: Always
-        name: noticegen
+        name: scheduler-api
         volumeMounts:                                               
         - name: quarkus-config-volume                               
           mountPath: /deployments/config 
@@ -50,4 +52,4 @@ spec:
       volumes:                                                      
       - name: quarkus-config-volume                               
         configMap:                                                
-          name: noticegen-config
+          name: scheduler-config

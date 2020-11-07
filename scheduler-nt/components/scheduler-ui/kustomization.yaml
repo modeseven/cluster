@@ -1,0 +1,7 @@
+commonLabels:
+  app: scheduler-ui
+
+resources:
+  - deployment.yml
+  - service.yml
+

@@ -1,0 +1,7 @@
+commonLabels:
+  app: scheduler-api
+
+resources:
+  - deployment.yml
+  - service.yml
+  - configMap.yml

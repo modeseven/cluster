@@ -1,0 +1,6 @@
+commonLabels:
+  app: postgres
+
+resources:
+  - endpoint.yml
+  - service.yml
