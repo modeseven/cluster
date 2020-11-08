@@ -4,7 +4,7 @@ metadata:
   name: scheduler-api
   namespace: develop
   annotations:
-    flux.weave.works/automated: "true"
+    fluxcd.io/automated: "true"
 spec:
   template:
     spec:
