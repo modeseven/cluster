@@ -35,7 +35,7 @@ spec:
               fieldPath: metadata.namespace
         envFrom:
         - secretRef:
-            name: postgres-secret
+            name: postgrespw
         - configMapRef:
             name: scheduler-config
         image: docker.io/modeseven/scheduler-api:938c1e3888f4a96835e67a1ab1e7e9782989f975
