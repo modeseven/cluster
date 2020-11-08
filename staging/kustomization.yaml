@@ -8,7 +8,7 @@ bases:
 - ../base
 - ../components/nats
 - ../components/noticegen
-#- ../components/postgres
-#- ../components/scheduler-api
-#- ../components/scheduler-ui
+- ../components/postgres
+- ../components/scheduler-api
+- ../components/scheduler-ui
 namespace: develop
