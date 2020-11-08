@@ -1,15 +1,16 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: scheduler-api
-  namespace: develop
   annotations:
     fluxcd.io/automated: "true"
+  name: scheduler-api
+  namespace: develop
 spec:
   template:
     spec:
       $setElementOrder/containers:
-        - name: scheduler-api
+      - name: scheduler-api
       containers:
-        - image: docker.io/modeseven/scheduler-api:938c1e3888f4a96835e67a1ab1e7e9782989f975
-          name: scheduler-api
+      - image: docker.io/modeseven/scheduler-api:b8b37be6a1b14bc32e8ef144a7df2baba9f3166d
+        name: scheduler-api
