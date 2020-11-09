@@ -6,9 +6,9 @@ commonAnnotations:
     note: scheduler-nt develop
 bases:
 - ../base
-- ../components/nats
-- ../components/noticegen
-- ../components/postgres
-- ../components/scheduler-api
-- ../components/scheduler-ui
+- ../services/nats
+- ../services/noticegen
+- ../services/postgres
+- ../services/scheduler-api
+- ../services/scheduler-ui
 namespace: develop
