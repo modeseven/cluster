@@ -12,22 +12,21 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-api
       containers:
-      - image: docker.io/modeseven/scheduler-api:b8b37be6a1b14bc32e8ef144a7df2baba9f3166d
+      - image: docker.io/modeseven/scheduler-api:1fc3ffbbcd5bbe1a8d7e0cdb5c79e07ff65222b7
         name: scheduler-api
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-    annotations:
-      fluxcd.io/automated: "true"
-    name: scheduler-ui
-    namespace: develop
+  annotations:
+    fluxcd.io/automated: "true"
+  name: scheduler-ui
+  namespace: develop
 spec:
-    template:
-    spec:
-        $setElementOrder/containers:
-        - name: scheduler-ui
-        containers:
-        - image: modeseven/scheduler-ui:88c893283e371dc17d04e1533f51cb133d53fe5f
-        name: scheduler-ui
-            
+  spec:
+    $setElementOrder/containers:
+    - name: scheduler-ui
+    containers:
+    - image: docker.io/modeseven/scheduler-ui:88c893283e371dc17d04e1533f51cb133d53fe5f
+    name: scheduler-ui
+  template: null
