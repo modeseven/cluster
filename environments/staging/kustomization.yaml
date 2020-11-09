@@ -1,0 +1,14 @@
+# namePrefix: dev-
+commonLabels:
+    variant: staging
+    org: mbegley
+commonAnnotations:
+    note: scheduler-nt staging
+bases:
+- ../../base
+- ../../services/nats
+- ../../services/noticegen
+- ../../services/postgres
+- ../../services/scheduler-api
+- ../../services/scheduler-ui
+namespace: staging
