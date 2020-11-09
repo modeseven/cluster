@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   namespace: scheduler
   annotations:
-    fluxcd.io/automated: "true"
+    app.quarkus.io/vcs-url: https://github.com/modeseven/scheduler-ui.git
   name: scheduler-ui
   labels:
     app: scheduler-ui
@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: scheduler-ui
-          image: modeseven/scheduler-ui:88c893283e371dc17d04e1533f51cb133d53fe5f
+          image: modeseven/scheduler-ui
           ports:
             - containerPort: 80
