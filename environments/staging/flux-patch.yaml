@@ -12,7 +12,7 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-api
       containers:
-      - image: docker.io/modeseven/scheduler-api:1fc3ffbbcd5bbe1a8d7e0cdb5c79e07ff65222b7
+      - image: docker.io/modeseven/scheduler-api:758b4df334c8035b5d2f8e61c57b8aa70c4883b6
         name: scheduler-api
 ---
 apiVersion: apps/v1
@@ -28,5 +28,5 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-ui
       containers:
-      - image: docker.io/modeseven/scheduler-ui:12308b9f0f9b5230362f5df0423e1dd5aaad8103
+      - image: docker.io/modeseven/scheduler-ui:46cf9ea461babebe01f595999794c2ecf512e531
         name: scheduler-ui
