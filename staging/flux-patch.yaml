@@ -5,7 +5,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
   name: scheduler-api
-  namespace: develop
+  namespace: staging
 spec:
   template:
     spec:
@@ -21,7 +21,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "true"
   name: scheduler-ui
-  namespace: develop
+  namespace: staging
 spec:
   spec:
     $setElementOrder/containers:
