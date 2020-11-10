@@ -28,7 +28,7 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-api
       containers:
-      - image: docker.io/modeseven/scheduler-api:1a13007e08ca3766fbf52714716fd548ec00f594
+      - image: docker.io/modeseven/scheduler-api:3250cd7d11ea85709256a82fec7926d4eae54c5e
         name: scheduler-api
 ---
 apiVersion: apps/v1
