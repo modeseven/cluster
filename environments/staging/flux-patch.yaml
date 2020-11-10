@@ -12,7 +12,7 @@ spec:
       $setElementOrder/containers:
       - name: noticegen
       containers:
-      - image: docker.io/modeseven/noticegen:e9670567c2241d22e0167c7e905782446e5caf48
+      - image: docker.io/modeseven/noticegen:f0de8313825b72772b89a392908a0606caa5716b
         name: noticegen
 ---
 apiVersion: apps/v1
