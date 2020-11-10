@@ -10,7 +10,7 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-api
       containers:
-      - image: docker.io/modeseven/scheduler-api:758b4df334c8035b5d2f8e61c57b8aa70c4883b6
+      - image: docker.io/modeseven/scheduler-api:3250cd7d11ea85709256a82fec7926d4eae54c5e
         name: scheduler-api
 ---
 apiVersion: apps/v1
