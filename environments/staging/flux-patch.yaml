@@ -44,5 +44,5 @@ spec:
       $setElementOrder/containers:
       - name: scheduler-ui
       containers:
-      - image: docker.io/modeseven/scheduler-ui:46cf9ea461babebe01f595999794c2ecf512e531
+      - image: docker.io/modeseven/scheduler-ui:fff16f0162c397ea53a24d381ce25c2d8ced1ad0
         name: scheduler-ui
