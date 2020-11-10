@@ -3,9 +3,6 @@ kind: Deployment
 metadata:
   annotations:
     app.quarkus.io/vcs-url: https://github.com/modeseven/scheduler.git
-    app.quarkus.io/build-timestamp: 2020-11-04 - 12:12:41 +0000
-    app.quarkus.io/commit-id: cfd678719658f4bd94e4cd59ef89db15e5eabd71
-    fluxcd.io/automated: "true"
   labels:
     app.kubernetes.io/name: noticegen
     app.kubernetes.io/version: 1.0.0-SNAPSHOT
@@ -21,8 +18,6 @@ spec:
     metadata:
       annotations:
         app.quarkus.io/vcs-url: https://github.com/modeseven/scheduler.git
-        app.quarkus.io/build-timestamp: 2020-11-04 - 12:12:41 +0000
-        app.quarkus.io/commit-id: cfd678719658f4bd94e4cd59ef89db15e5eabd71
       labels:
         app.kubernetes.io/name: noticegen
         app.kubernetes.io/version: 1.0.0-SNAPSHOT
@@ -37,7 +32,7 @@ spec:
         envFrom:
         - configMapRef:
             name: noticegen-config
-        image: docker.io/modeseven/noticegen:fc8aff43ebb3d5d508c1b69009120a50f628c931
+        image: docker.io/modeseven/noticegen
         imagePullPolicy: Always
         name: noticegen
         volumeMounts:                                               

@@ -38,7 +38,7 @@ spec:
             name: postgrespw
         - configMapRef:
             name: scheduler-config
-        image: docker.io/modeseven/scheduler-api:938c1e3888f4a96835e67a1ab1e7e9782989f975
+        image: docker.io/modeseven/scheduler-api
         imagePullPolicy: Always
         name: scheduler-api
         volumeMounts:                                               
