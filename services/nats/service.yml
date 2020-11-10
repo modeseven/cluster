@@ -11,7 +11,7 @@ spec:
   type: ClusterIP
   ports:
   - name: client
-    port: 4222
+    port: 4223
   # - name: cluster
   #   port: 6222
   # - name: monitor
