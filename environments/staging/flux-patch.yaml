@@ -36,7 +36,7 @@ kind: Deployment
 metadata:
   annotations:
     fluxcd.io/automated: "true"
-  name: noticegen
+  name: noticegen-deployment
   namespace: staging
 spec:
   template:
