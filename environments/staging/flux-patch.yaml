@@ -4,6 +4,22 @@ kind: Deployment
 metadata:
   annotations:
     fluxcd.io/automated: "true"
+  name: noticegen-deployment
+  namespace: staging
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: noticegen
+      containers:
+      - image: docker.io/modeseven/noticegen:e9670567c2241d22e0167c7e905782446e5caf48
+        name: noticegen
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    fluxcd.io/automated: "true"
   name: scheduler-api
   namespace: staging
 spec:
@@ -30,19 +46,3 @@ spec:
       containers:
       - image: docker.io/modeseven/scheduler-ui:46cf9ea461babebe01f595999794c2ecf512e531
         name: scheduler-ui
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  annotations:
-    fluxcd.io/automated: "true"
-  name: noticegen-deployment
-  namespace: staging
-spec:
-  template:
-    spec:
-      $setElementOrder/containers:
-      - name: noticegen
-      containers:
-      - image: docker.io/modeseven/noticegen:fc8aff43ebb3d5d508c1b69009120a50f628c931
-        name: noticegen
