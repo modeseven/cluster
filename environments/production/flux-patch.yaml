@@ -1,0 +1,42 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scheduler-api
+  namespace: prod
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: scheduler-api
+      containers:
+      - image: docker.io/modeseven/scheduler-api:758b4df334c8035b5d2f8e61c57b8aa70c4883b6
+        name: scheduler-api
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: scheduler-ui
+  namespace: prod
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: scheduler-ui
+      containers:
+      - image: docker.io/modeseven/scheduler-ui:46cf9ea461babebe01f595999794c2ecf512e531
+        name: scheduler-ui
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: noticegen-deployment
+  namespace: prod
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: noticegen
+      containers:
+      - image: docker.io/modeseven/noticegen:fc8aff43ebb3d5d508c1b69009120a50f628c931
+        name: noticegen

@@ -1,0 +1,14 @@
+# namePrefix: dev-
+commonLabels:
+    variant: prod
+    org: mbegley
+commonAnnotations:
+    note: scheduler-nt prod
+bases:
+- ../../base
+- ../../services/nats
+- ../../services/noticegen
+- ../../services/postgres
+- ../../services/scheduler-api
+- ../../services/scheduler-ui
+namespace: prod
