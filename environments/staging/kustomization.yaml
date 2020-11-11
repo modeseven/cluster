@@ -17,3 +17,5 @@ namespace: scheduler-staging
 images:
 - name: modeseven/noticegen
   newTag: master-00343a73
+- name: modeseven/scheduler-api
+  newTag: master-03868528
