@@ -5,10 +5,10 @@ commonLabels:
 commonAnnotations:
     note: scheduler-nt prod
 bases:
-- ../../base
+# - ../../base
 - ../../services/nats
 - ../../services/noticegen
 - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
-namespace: prod
+namespace: scheduler-prod
