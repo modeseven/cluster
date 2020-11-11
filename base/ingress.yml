@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: scheduler-staging
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    cert-manager.io/cluster-issuer: "letsencrypt-prod" # Cluster Issuer configured with certmanage
+spec:
+  tls:
+  - hosts:
+      - scheduler-dev.michaelbegley.com
+    secretName: scheduler-dev-michaelbegley-com-tls
+  rules:
+  - host: scheduler-dev.michaelbegley.com
+    http:
+      paths:
+      - path: /api/?(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: scheduler-api
+            port:
+              number: 8080
+      - path: /ng/?(.*)
+        pathType: Prefix
+        backend:
+          service:
+            name: noticegen
+            port:
+              number: 8080

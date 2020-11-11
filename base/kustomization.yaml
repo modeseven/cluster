@@ -2,7 +2,7 @@ commonLabels:
   app: scheduler-nt
 
 resources:
-  - namespace.yml
+  - ingress.yml
 
 
 
