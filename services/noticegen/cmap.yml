@@ -8,3 +8,4 @@ metadata:
 data:
   application.properties: |-
     nats.host=nats
+    nats.port=4223

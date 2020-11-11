@@ -12,4 +12,5 @@ data:
   TEST_PROP: testing1238
   application.properties: |-
     nats.host=nats
+    nats.port=4223
 
