@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  namespace: scheduler
-  name: nats-deployment
+  name: nats
   labels:
     app: nats
 spec:
@@ -40,16 +39,16 @@ spec:
         ports:
         - containerPort: 4222
           name: client
-          hostPort: 4223
-        # - containerPort: 7422
-        #   name: leafnodes
-        #   hostPort: 7422
-        # - containerPort: 6222
-        #   name: cluster
+          hostPort: 4222
+        - containerPort: 7422
+          name: leafnodes
+          hostPort: 7422
+        - containerPort: 6222
+          name: cluster
         - containerPort: 8222
           name: monitor
-        # - containerPort: 7777
-        #   name: metrics
+        - containerPort: 7777
+          name: metrics
         command:
          - "nats-server"
          - "--config"
