@@ -18,6 +18,6 @@ images:
 - name: modeseven/noticegen
   newTag: master-214b0e49
 - name: modeseven/scheduler-api
-  newTag: develop-03868528
+  newTag: develop-21619ee8
 - name: modeseven/scheduler-ui
   newTag: master-788885b9
