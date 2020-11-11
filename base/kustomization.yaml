@@ -1,8 +1,8 @@
-commonLabels:
-  app: scheduler-nt
+# commonLabels:
+#   app: scheduler-nt
 
-resources:
-  - ingress.yml
+# resources:
+#   - ingress.yml
 
 
 
