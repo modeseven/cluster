@@ -19,3 +19,5 @@ images:
   newTag: master-00343a73
 - name: modeseven/scheduler-api
   newTag: master-03868528
+- name: modeseven/scheduler-ui
+  newTag: master-788885b9
