@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
         - name: scheduler-ui
-          image: docker.io/modeseven/scheduler-ui
+          image: modeseven/scheduler-ui
           ports:
             - containerPort: 80

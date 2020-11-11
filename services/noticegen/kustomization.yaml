@@ -7,6 +7,3 @@ resources:
 - cmap.yml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-images:
-- name: modeseven/noticegen
-  newTag: master-f6e86274

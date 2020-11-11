@@ -32,7 +32,7 @@ spec:
         envFrom:
         - configMapRef:
             name: noticegen-config
-        image: docker.io/modeseven/noticegen
+        image: modeseven/noticegen
         imagePullPolicy: Always
         name: noticegen
         volumeMounts:                                               
