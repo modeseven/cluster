@@ -15,5 +15,5 @@ resources:
 - ../../services/scheduler-ui
 namespace: scheduler-prod
 images:
-- name: modeseven/noticegen
+- name: noticegen
   newTag: master-58f40815
