@@ -1,14 +1,19 @@
 # namePrefix: dev-
 commonLabels:
-    variant: prod
-    org: mbegley
+  org: mbegley
+  variant: prod
 commonAnnotations:
-    note: scheduler-nt prod
-bases:
+  note: scheduler-nt prod
 # - ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
 - ../../services/nats
 - ../../services/noticegen
 - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-prod
+images:
+- name: modeseven/noticegen
+  newTag: master-58f40815
