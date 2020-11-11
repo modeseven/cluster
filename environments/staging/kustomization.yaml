@@ -5,10 +5,10 @@ commonLabels:
 commonAnnotations:
     note: scheduler-nt staging
 bases:
-- ../../base
+- # ../../base
 - ../../services/nats
 - ../../services/noticegen
 - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
-namespace: staging
+namespace: scheduler-staging
