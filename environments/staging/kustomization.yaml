@@ -1,14 +1,19 @@
 # namePrefix: dev-
 commonLabels:
-    variant: staging
-    org: mbegley
+  org: mbegley
+  variant: staging
 commonAnnotations:
-    note: scheduler-nt staging
-bases:
-- # ../../base
+  note: scheduler-nt staging
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- ../../base
 - ../../services/nats
 - ../../services/noticegen
 - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-staging
+images:
+- name: modeseven/noticegen
+  newTag: master-52862a7a
