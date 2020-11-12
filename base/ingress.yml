@@ -2,10 +2,18 @@
 # kind: Ingress
 # metadata:
 #   name: scheduler-staging
+#   namespace: scheduler-staging
 #   annotations:
-#     kubernetes.io/ingress.class: nginx
+#     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+#     ingress.kubernetes.io/service-upstream: "true"
+#     kubernetes.io/ingress.class: "nginx"
+#     kubernetes.io/tls-acme: "true"
+#     kubernetes.io/ingress.allow-http: "false"
+#     nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+#     nginx.ingress.kubernetes.io/ssl-redirect: "true"
+#     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
 #     nginx.ingress.kubernetes.io/rewrite-target: /$1
-#     cert-manager.io/cluster-issuer: "letsencrypt-prod"
+#     nginx.ingress.kubernetes.io/proxy-body-size: "1M"
 # spec:
 #   tls:
 #   - hosts:
@@ -15,6 +23,13 @@
 #   - host: scheduler-dev.michaelbegley.com
 #     http:
 #       paths:
+#       - path: /
+#         pathType: Prefix
+#         backend:
+#           service:
+#             name: scheduler-ui
+#             port:
+#               number: 80
 #       - path: /api/?(.*)
 #         pathType: Prefix
 #         backend:
