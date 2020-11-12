@@ -1,13 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  annotations:
-    app.quarkus.io/vcs-url: https://github.com/modeseven/scheduler.git
-  labels:
-    app.kubernetes.io/name: noticegen
-    app.kubernetes.io/version: 1.0.0-SNAPSHOT
   name: noticegen-deployment
-  namespace: scheduler
 spec:
   replicas: 1
   selector:
@@ -21,7 +15,6 @@ spec:
       labels:
         app.kubernetes.io/name: noticegen
         app.kubernetes.io/version: 1.0.0-SNAPSHOT
-      namespace: scheduler
     spec:
       containers:
       - env:

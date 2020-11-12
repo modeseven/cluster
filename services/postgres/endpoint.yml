@@ -2,7 +2,6 @@ kind: Endpoints
 apiVersion: v1
 metadata:
   name: postgres-headless
-  namespace: scheduler
 subsets:
   - addresses:
       - ip: 192.168.1.121
