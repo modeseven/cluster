@@ -21,4 +21,4 @@ images:
 - name: modeseven/scheduler-api
   newTag: develop-048b34b7
 - name: modeseven/scheduler-ui
-  newTag: master-788885b9
+  newTag: master-d40cdc80
