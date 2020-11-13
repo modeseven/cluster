@@ -21,4 +21,4 @@ spec:
         - name: scheduler-ui
           image: modeseven/scheduler-ui
           ports:
-            - containerPort: 80
+            - containerPort: 3000
