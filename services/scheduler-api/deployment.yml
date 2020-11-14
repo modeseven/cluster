@@ -32,13 +32,13 @@ spec:
         image: modeseven/scheduler-api
         livenessProbe:
           httpGet:
-            path: /health
+            path: /api/health
             port: 8080
           initialDelaySeconds: 5
           periodSeconds: 5
         readinessProbe:
           httpGet:
-            path: /health
+            path: /api/health
             port: 8080
           initialDelaySeconds: 5
           periodSeconds: 5
