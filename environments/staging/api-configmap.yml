@@ -8,5 +8,3 @@ data:
     nats.port=4222
     # quarkus.smallrye-openapi.path=/api/openapi
     #  quarkus.swagger-ui.path=/api/swagger-ui
-    quarkus.swagger-ui.always-include=true
-    quarkus.http.root-path=/api
