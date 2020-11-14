@@ -30,6 +30,12 @@ spec:
         - configMapRef:
             name: scheduler-config
         image: modeseven/scheduler-api
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
         imagePullPolicy: Always
         name: scheduler-api
         volumeMounts:                                               
