@@ -22,3 +22,5 @@ images:
   newTag: develop-d8b80025
 - name: modeseven/scheduler-ui
   newTag: master-d40cdc80
+patchesStrategicMerge:
+- api-configmap.yml
