@@ -19,3 +19,17 @@ spec:
     secretName: scheduler-michaelbegley-com-tls
   rules:
   - host: scheduler.michaelbegley.com
+    http:
+    paths:
+    - path: /?(.*)
+      backend:
+        serviceName: scheduler-ui
+        servicePort: 80
+    - path: /api?(.*)
+      backend:
+        serviceName: scheduler-api
+        servicePort: 8080
+    - path: /ng?(.*)
+      backend:
+        serviceName: noticegen
+        servicePort: 8080
