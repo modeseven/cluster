@@ -21,6 +21,6 @@ images:
 - name: modeseven/scheduler-api
   newTag: develop-78d652a6
 - name: modeseven/scheduler-ui
-  newTag: master-d40cdc80
+  newTag: master-d92fce37
 patchesStrategicMerge:
 - api-configmap.yml
