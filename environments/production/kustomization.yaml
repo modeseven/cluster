@@ -4,7 +4,6 @@ commonLabels:
   variant: prod
 commonAnnotations:
   note: scheduler-nt prod
-# - ../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:

@@ -6,5 +6,3 @@ data:
   application.properties: |-
     nats.host=nats
     nats.port=4222
-    # quarkus.smallrye-openapi.path=/api/openapi
-    #  quarkus.swagger-ui.path=/api/swagger-ui
