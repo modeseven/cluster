@@ -7,6 +7,7 @@ commonAnnotations:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
+- ../../base
 - ../../services/nats
 - ../../services/noticegen
 - ../../services/postgres
@@ -15,11 +16,12 @@ resources:
 namespace: scheduler-prod
 images:
 - name: modeseven/noticegen
-  newTag: master-a4860107
+  newTag: develop-a4860107
 - name: modeseven/scheduler-api
-  newTag: master-60f3d872
+  newTag: develop-96e9bffb
 - name: modeseven/scheduler-ui
-  newTag: master-d40cdc80
+  newTag: master-37398fb5
 patchesStrategicMerge:
 - increase-replicas.yml
 - api-configmap.yml
+- ingress.yml
