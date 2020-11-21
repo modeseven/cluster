@@ -39,10 +39,10 @@ spec:
         ports:
         - containerPort: 4222
           name: client
-          hostPort: 4222
+          # hostPort: 4222 # TODO: if i remove this what happens?
         - containerPort: 7422
           name: leafnodes
-          hostPort: 7422
+          # hostPort: 7422
         - containerPort: 6222
           name: cluster
         - containerPort: 8222
