@@ -4,9 +4,6 @@ metadata:
   name: scheduler-api
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app.kubernetes.io/name: scheduler-api
   template:
     spec:
       containers:
