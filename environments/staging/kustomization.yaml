@@ -20,6 +20,6 @@ images:
 - name: modeseven/scheduler-api
   newTag: develop-449fd6d2
 - name: modeseven/scheduler-ui
-  newTag: develop-3c77320f
+  newTag: develop-3c37b350
 patchesStrategicMerge:
 - env-cm-patch.yml
