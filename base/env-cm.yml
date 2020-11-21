@@ -8,5 +8,5 @@ data:
   POSTGRES_HOST: postgres-headless
   TEST_PROP: testing1238
   NATS_HOST: nats
-  NATS_PORT: 4222
+  NATS_PORT: "4222"
 

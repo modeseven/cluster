@@ -4,5 +4,4 @@ metadata:
   name: noticegen-config
 data:
   application.properties: |-
-    nats.host=nats
-    nats.port=4222
+    appoveride=override
