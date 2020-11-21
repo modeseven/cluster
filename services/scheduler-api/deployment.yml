@@ -20,7 +20,7 @@ spec:
         - secretRef:
             name: postgrespw
         - configMapRef:
-            name: scheduler-config
+            name: scheduler-env
         image: modeseven/scheduler-api
         livenessProbe:
           httpGet:

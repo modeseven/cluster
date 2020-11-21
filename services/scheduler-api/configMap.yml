@@ -3,11 +3,6 @@ kind: ConfigMap
 metadata:
   name: scheduler-config
 data:
-  POSTGRES_DB: scheduler
-  POSTGRES_USER: postgres
-  POSTGRES_HOST: postgres-headless
-  TEST_PROP: testing1238
   application.properties: |-
-    nats.host=nats
-    nats.port=4222
+    test.override=testoverride
 

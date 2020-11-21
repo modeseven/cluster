@@ -1,8 +1,7 @@
-# commonLabels:
-#   app: scheduler-nt
-
 resources:
   - ingress.yml
+  - env-cm.yml
+  - postgres-secret.yml
 
 
 

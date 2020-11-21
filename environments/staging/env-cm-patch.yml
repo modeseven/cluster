@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: scheduler-env
+data:
+  POSTGRES_DB: scheduler
+  POSTGRES_USER: postgres
+  POSTGRES_HOST: 192.168.1.121
+  TEST_PROP: testing1238
+  NATS_HOST: nats
+  NATS_PORT: 4222
+
