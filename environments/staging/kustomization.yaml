@@ -18,7 +18,7 @@ images:
 - name: modeseven/noticegen
   newTag: master-73b26583
 - name: modeseven/scheduler-api
-  newTag: develop-64559277
+  newTag: develop-90d7d4f1
 - name: modeseven/scheduler-ui
   newTag: develop-3c37b350
 patchesStrategicMerge:
