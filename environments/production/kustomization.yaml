@@ -18,7 +18,6 @@ images:
   newTag: develop-a4860107
 - name: modeseven/scheduler-api
   newName: modeseven/scheduler-api-prod
-  newTag: prod-91aa6ad5
 - name: modeseven/scheduler-api-prod
   newTag: prod-fc482ffa
 - name: modeseven/scheduler-ui
