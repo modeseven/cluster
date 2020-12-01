@@ -16,14 +16,11 @@ resources:
 namespace: scheduler-prod
 images:
 - name: modeseven/noticegen
-  newTag: develop-a4860107
+  newTag: master-73b26583
 - name: modeseven/scheduler-api
-  newName:  modeseven/scheduler-api-prod
-  newTag: develop-fc482ffa
-- name: modeseven/scheduler-api-prod
   newTag: develop-fc482ffa
 - name: modeseven/scheduler-ui
-  newTag: master-37398fb5
+  newTag: develop-2160f64f
 patchesStrategicMerge:
 - increase-replicas.yml
 - ingress.yml
