@@ -10,7 +10,6 @@ resources:
 - ../../base
 - ../../services/nats
 - ../../services/noticegen
-- ""
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-prod
