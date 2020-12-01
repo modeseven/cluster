@@ -10,7 +10,7 @@ resources:
 - ../../base
 - ../../services/nats
 - ../../services/noticegen
-- ../../services/postgres
+- # ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-prod
@@ -19,9 +19,9 @@ images:
   newTag: develop-a4860107
 - name: modeseven/scheduler-api
   newName:  modeseven/scheduler-api-prod
-  newTag: prod-91aa6ad5
+  newTag: develop-fc482ffa
 - name: modeseven/scheduler-api-prod
-  newTag: prod-91aa6ad5
+  newTag: develop-fc482ffa
 - name: modeseven/scheduler-ui
   newTag: master-37398fb5
 patchesStrategicMerge:
