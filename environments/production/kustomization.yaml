@@ -26,5 +26,5 @@ images:
   newTag: master-37398fb5
 patchesStrategicMerge:
 - increase-replicas.yml
-- api-configmap.yml
 - ingress.yml
+- env-cm-patch.yml

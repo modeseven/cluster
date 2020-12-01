@@ -10,7 +10,7 @@ resources:
 - ../../base
 - ../../services/nats
 - ../../services/noticegen
-- ../../services/postgres
+# - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-staging
