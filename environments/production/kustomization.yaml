@@ -19,7 +19,7 @@ images:
 - name: modeseven/scheduler-api
   newName: modeseven/scheduler-api-prod
 - name: modeseven/scheduler-api-prod
-  newTag: prod-fc482ffa
+  newTag: prod-8384afcb
 - name: modeseven/scheduler-ui
   newTag: master-37398fb5
 patchesStrategicMerge:
