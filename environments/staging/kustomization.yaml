@@ -6,11 +6,11 @@ commonAnnotations:
   note: scheduler-nt staging
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
+# - ../../services/postgres
 resources:
 - ../../base
 - ../../services/nats
 - ../../services/noticegen
-# - ../../services/postgres
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 namespace: scheduler-staging
@@ -18,7 +18,7 @@ images:
 - name: modeseven/noticegen
   newTag: master-73b26583
 - name: modeseven/scheduler-api
-  newTag: develop-fc482ffa
+  newTag: develop-8384afcb
 - name: modeseven/scheduler-ui
   newTag: develop-2160f64f
 patchesStrategicMerge:
