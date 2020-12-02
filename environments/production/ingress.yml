@@ -15,10 +15,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - scheduler.michaelbegley.com
-    secretName: scheduler-michaelbegley-com-tls
+    - scheduler.mbegley.net
+    secretName: scheduler-mbegley-net-tls
   rules:
-  - host: scheduler.michaelbegley.com
+  - host: scheduler.mbegley.net
     http:
       paths:
       - path: /?(.*)
