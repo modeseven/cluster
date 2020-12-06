@@ -15,7 +15,7 @@ resources:
 namespace: scheduler-prod
 images:
 - name: modeseven/noticegen
-  newTag: develop-a4860107
+  newTag: v0.0.1-beta
 - name: modeseven/scheduler-api
   newTag: v.0.0.5-alpha
 - name: modeseven/scheduler-ui
