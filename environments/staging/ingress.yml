@@ -15,3 +15,26 @@ spec:
       secretName: scheduler-dev-mbegley-net-tls
   rules:
     - host: scheduler-dev.mbegley.net
+      http:
+        paths:
+          - path: /?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: scheduler-ui
+                port:
+                  number: 80
+          - path: /api/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: scheduler-api
+                port:
+                  number: 8080
+          - path: /ng/?(.*)
+            pathType: Prefix
+            backend:
+              service:
+                name: noticegen
+                port:
+                  number: 8080
