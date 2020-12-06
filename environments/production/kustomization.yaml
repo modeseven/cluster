@@ -18,8 +18,6 @@ images:
   newTag: develop-a4860107
 - name: modeseven/scheduler-api
   newTag: v.0.0.5-alpha
-- name: modeseven/scheduler-api-prod
-  newTag: prod-v.0.0.4
 - name: modeseven/scheduler-ui
   newTag: master-37398fb5
 patchesStrategicMerge:
