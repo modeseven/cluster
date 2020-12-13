@@ -6,7 +6,6 @@ commonAnnotations:
   note: scheduler-nt staging
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-# - ../../services/postgres
 resources:
 - ../../base
 - ../../services/nats
@@ -16,11 +15,12 @@ resources:
 namespace: scheduler-staging
 images:
 - name: modeseven/noticegen
-  newTag: master-73b26583
+  newTag: master-b9311578
 - name: modeseven/scheduler-api
-  newTag: develop-8384afcb
+  newTag: master-ecfcb18d
 - name: modeseven/scheduler-ui
-  newTag: develop-2160f64f
+  newTag: master-c74e80d5
 patchesStrategicMerge:
 - env-cm-patch.yml
 - increase-replicas.yml
+- ingress.yml
