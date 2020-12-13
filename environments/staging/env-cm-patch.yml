@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: scheduler-env
 data:
-  POSTGRES_DB: scheduler
+  POSTGRES_DB: scheduler-staging
   POSTGRES_USER: postgres
-  POSTGRES_HOST: "192.168.1.121"
+  POSTGRES_HOST: "postgres-ha-postgresql-ha-pgpool.postgres-ha.svc.cluster.local"
   TEST_PROP: testing1238
   NATS_HOST: nats
   NATS_PORT: "4222"
