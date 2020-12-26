@@ -2,5 +2,5 @@ commonLabels:
   app: postgres
 
 resources:
-  - endpoint.yml
+  - stateful.yml
   - service.yml

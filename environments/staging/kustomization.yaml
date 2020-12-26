@@ -12,6 +12,7 @@ resources:
 - ../../services/noticegen
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
+- ../../services/postgres
 namespace: scheduler-staging
 images:
 - name: modeseven/noticegen
