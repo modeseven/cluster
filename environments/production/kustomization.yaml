@@ -13,7 +13,6 @@ resources:
 - ../../services/scheduler-api
 - ../../services/scheduler-ui
 - ../../services/postgres
-namespace: scheduler-prod
 images:
 - name: modeseven/noticegen
   newTag: v0.0.1-beta
