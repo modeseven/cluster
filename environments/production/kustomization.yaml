@@ -17,7 +17,7 @@ images:
 - name: modeseven/noticegen
   newTag: v0.0.1-beta
 - name: modeseven/scheduler-api
-  newTag: v0.0.6
+  newTag: v.0.0.7
 - name: modeseven/scheduler-ui
   newTag: v0.0.1-beta
 patchesStrategicMerge:
