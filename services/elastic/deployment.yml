@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: elastic
-  serviceName: elastic
+  serviceName: "elastic"
   replicas: 1
   template:
     metadata:
@@ -24,10 +24,5 @@ spec:
             - containerPort: 9300
               name: elastic-b
           env:
-            # - name: POSTGRES_PASSWORD
-            #   valueFrom:
-            #     secretKeyRef:
-            #       name: postgrespw
-            #       key: POSTGRES_PASSWORD
             - name: discovery.type
               value: single-node

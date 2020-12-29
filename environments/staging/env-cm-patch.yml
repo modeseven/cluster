@@ -9,4 +9,4 @@ data:
   TEST_PROP: testing1238
   NATS_HOST: nats
   NATS_PORT: "4222"
-  ELASTIC_HOST: "elastic-service"
+  ELASTIC_HOST: elastic
