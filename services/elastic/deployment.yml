@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: elastic
+  labels:
+    app: elastic
+spec:
+  selector:
+    matchLabels:
+      app: elastic
+  serviceName: elastic
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: elastic
+    spec:
+      containers:
+        - name: elastic-search
+          image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.1
+          ports:
+            - containerPort: 9200
+              name: elastic-a
+            - containerPort: 9300
+              name: elastic-b
+          env:
+            # - name: POSTGRES_PASSWORD
+            #   valueFrom:
+            #     secretKeyRef:
+            #       name: postgrespw
+            #       key: POSTGRES_PASSWORD
+            - name: discovery.type
+              value: single-node

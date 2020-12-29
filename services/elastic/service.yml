@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: elastic-service
+  labels:
+    app: elastic
+spec:
+  selector:
+    app: elastic
+  type: ClusterIP
+  ports:
+    - port: 9200
+      name: elastic-a
+    - port: 9300
+      name: elastic-b
