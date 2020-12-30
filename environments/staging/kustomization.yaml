@@ -21,7 +21,7 @@ images:
 - name: modeseven/scheduler-api
   newTag: master-b6d6aceb
 - name: modeseven/scheduler-ui
-  newTag: master-c74e80d5
+  newTag: master-23ad8908
 patchesStrategicMerge:
 - env-cm-patch.yml
 - increase-replicas.yml
