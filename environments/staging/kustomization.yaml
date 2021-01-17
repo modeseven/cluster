@@ -19,7 +19,7 @@ images:
 - name: modeseven/noticegen
   newTag: master-b9311578
 - name: modeseven/scheduler-api
-  newTag: master-69ed0676
+  newTag: master-b6d6aceb
 - name: modeseven/scheduler-ui
   newTag: master-23ad8908
 patchesStrategicMerge:
