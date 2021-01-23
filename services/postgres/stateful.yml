@@ -20,7 +20,7 @@ spec:
           image: postgres
           ports:
             - containerPort: 5432
-              name: postgresdb
+              name: tcp-postgres
           volumeMounts:
             - name: postgres-disk
               mountPath: /var/lib/postgresql/data
