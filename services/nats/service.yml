@@ -9,7 +9,7 @@ spec:
     app: nats
   type: ClusterIP
   ports:
-  - name: tcp
+  - name: tcp-nats
     port: 4222
   - name: cluster
     port: 6222
