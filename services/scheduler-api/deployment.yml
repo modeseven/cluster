@@ -26,13 +26,13 @@ spec:
           httpGet:
             path: /health
             port: 8080
-          initialDelaySeconds: 50
+          initialDelaySeconds: 150
           periodSeconds: 30
         readinessProbe:
           httpGet:
             path: /health
             port: 8080
-          initialDelaySeconds: 50
+          initialDelaySeconds: 150
           periodSeconds: 30
         imagePullPolicy: Always
         name: scheduler-api
